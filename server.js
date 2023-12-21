@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
   res.json({result: '스마트앱프로그래밍 백엔드'})
 })
 
-app.get('/song', (req, res) => {
-    const sql = 'select * from song'
+app.get('/patient', (req, res) => {
+    const sql = 'select * from patient'
     
       db.query(sql, (err, rows) => {
           if (err) {
